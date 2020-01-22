@@ -30,7 +30,9 @@ Install Spyder (Python 3.7) from Anaconda Navigator 3 in the computer.
 ##### 1. start point
 
 By drawing the images of pub and  drunks' home, we assume that all drunks start from the same point to find their own home, and the choice of this point has little effect for the model, so we choose the middle position of the pub area
+
 Here i choose x=136, y=148 as my start point, all drunks start at this point. 
+
 The start point is in orange colour.
 
 ![](Figure_1.png)
