@@ -31,7 +31,7 @@ Install Spyder (Python 3.7) from Anaconda Navigator 3 in the computer.
 
 By drawing the images of pub and  drunks' home, we assume that all drunks start from the same point to find their own home, and the choice of this point has little effect for the model, so we choose the middle position of the pub area
 
-Here i choose x=136, y=148 as my start point, all drunks start at this point. 
+Here i choose x=136, y=148 as my start point (the Pub), all drunks start at this point. 
 
 The start point is in orange colour.
 
@@ -66,7 +66,8 @@ move the drunk randomly left/right/up/down in a loop that picks randomly the way
 ```
 
 If you set the `step` to a small value, such as `1`, it will take a long time to find the trajectory, and a large number of trajectory points will be generated.
-Therefore, i select step=3, it is much easier to find the trajectory.
+
+Due to that, i select 3 as my step number, so the step = 3, it is much easier to find the trajectory.
 
 ![](Planing_for_Drunks.png)
 
@@ -74,7 +75,9 @@ Since need to adjust the value of `step` to get better trajectory.
 
 ##### 3. drunks' step number
 
-Because drunks move randomly, it is found during the experiment that the number of steps to return home is not large. Therefore, a rule was designed during the software design process to dynamically increase the number of steps, thereby reducing the number of steps in the process.
+Because drunks move randomly, it is found during the experiment that the number of steps to return home is not large. 
+
+Therefore, a rule was designed during the software design process to dynamically increase the number of steps, thereby reducing the number of steps in the process.
 
 ```python
 step_num = step_num + num_iter/100
@@ -87,6 +90,9 @@ Dynamically increase the number of steps as the number of iterations increases.
 ### A result
 
 ![](Planing_for_Drunks2.png)
+
+The Image in left illustrates the trace of drunks whereas the image in right demonstrates the density of trace.
+
 
 ### License
 
